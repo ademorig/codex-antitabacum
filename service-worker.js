@@ -5,7 +5,7 @@
 
 const CACHE_NAME = 'codex-cache-v1';
 const urlsToCache = [
-  '/',
+  './',
   'index.html',
   'style.css',
   'app.js',
