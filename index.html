@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codex Philosophicus Antitabacum</title>
     <meta name="description" content="Estrategias filosóficas para dejar de fumar, basadas en el estoicismo, Platón, Nietzsche y más.">
+    
     <link rel="stylesheet" href="style.css">
+    
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#121212">
     <link rel="icon" href="/favicon.ico">
@@ -22,22 +24,30 @@
             </p>
         </header>
 
-        <section class="battle-plan" aria-labelledby="plan-heading">
-            <h2 id="plan-heading" class="battle-plan-title">🎯 TU PLAN DE BATALLA</h2>
-            <p><strong>Estrategia Principal:</strong> No comprar cigarrillos + Sistema de meditaciones filosóficas</p>
-            <p><strong>Duración total diaria:</strong> 35-40 minutos distribuidos inteligentemente</p>
-            <p><strong>Principio:</strong> Cada meditación está diseñada para el estado mental específico de esa hora</p>
-        </section>
-
-        <main id="meditations-container" aria-live="polite">
-            </main>
-
-        <section class="summary" aria-labelledby="summary-heading">
-            <h2 id="summary-heading" class="summary-title">⚔️ RESUMEN DE BATALLA DIARIA</h2>
-            <div id="day-structure" class="day-structure">
+        <main aria-live="polite">
+            <section class="battle-plan" aria-labelledby="plan-heading">
+                <h2 id="plan-heading" class="battle-plan-title">🎯 TU PLAN DE BATALLA</h2>
+                <p><strong>Estrategia Principal:</strong> No comprar cigarrillos + Sistema de meditaciones filosóficas</p>
+                <p><strong>Duración total diaria:</strong> 35-40 minutos distribuidos inteligentemente</p>
+                <p><strong>Principio:</strong> Cada meditación está diseñada para el estado mental específico de esa hora</p>
+            </section>
+            
+            <section class="progress-section">
+                <h3>Progreso Diario:</h3>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
                 </div>
-        </section>
+                <p id="progress-text" class="progress-text">0 de 7 Meditaciones Completadas</p>
+            </section>
 
+            <div id="meditations-container"></div>
+            
+            <section class="summary" aria-labelledby="summary-heading">
+                <h2 id="summary-heading" class="summary-title">⚔️ RESUMEN DE BATALLA DIARIA</h2>
+                <div id="day-structure" class="day-structure"></div>
+            </section>
+        </main>
+        
         <blockquote class="motivational-quote" aria-label="Cita de motivación para el proceso de dejar de fumar.">
             <p>"No buscas dejar de fumar. Buscas convertirte en alguien para quien fumar ya no tiene sentido. Estas meditaciones son tu metamorfosis filosófica."</p>
             <cite class="author">- Tu Yo Futuro, El Filósofo Guerrero</cite>
@@ -49,6 +59,6 @@
         <p>El enemigo es poderoso, pero tu arsenal filosófico es infinito.</p>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 </body>
 </html>
