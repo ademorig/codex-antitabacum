@@ -2,7 +2,7 @@
   "name": "Codex Philosophicus Antitabacum",
   "short_name": "Codex",
   "description": "Meditaciones para dejar de fumar.",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#f39c12",
