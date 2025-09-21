@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 8. REGISTRO DEL SERVICE WORKER - ¡La clave para el modo offline! 🔑
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/service-worker.js').then(
+            navigator.serviceWorker.register('service-worker.js').then(
                 registration => {
                     console.log('ServiceWorker registrado con éxito:', registration);
                 },
@@ -179,3 +179,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Y el espectáculo comienza...
     renderContent();
 });
+
